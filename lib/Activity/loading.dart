@@ -15,12 +15,15 @@ class _LoadingState extends State<Loading> {
       body: SafeArea(
         child: Column(
           children: [
-            FlatButton.icon(
+            TextButton.icon(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushNamed(context, '/location');
                 },
-                icon: Icon(Icons.home),
-                label: Text("Go to Home page"))
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.amber,
+                ),
+                label: Text("Go to location page"))
           ],
         ),
       ),
